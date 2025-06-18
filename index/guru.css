@@ -1,0 +1,125 @@
+/* Reset dan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #05096e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar .logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.sidebar .menu {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.sidebar .menu-item {
+  padding: 12px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-item a {
+  text-decoration: none;   
+  color: inherit;          
+  display: block;
+}
+
+.sidebar .menu-item.active,
+.sidebar .menu-item:hover {
+  background-color: rgb(255, 255, 255);
+  color: #05096e;
+}
+
+.sidebar .notif {
+  background-color: #00e676;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #000;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #FFFFFF;
+  color: #05096e;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logout-button a{
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content {
+  padding: 30px;
+}
+
+.activity-card {
+  background-color: #eeeeee;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.activity-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.activity-card p.blue {
+  color: #0a00c6;
+}
+
+.bell-icon {
+  font-size: 20px;
+  color: black;
+}

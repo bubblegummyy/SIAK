@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Guru</title>
+  <link rel="stylesheet" href="guru.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="../asset/logoht.png" alt="Logo Sekolah" class="logo" />
+    <div class="menu">
+      <div class="menu-item">
+        <a href="daftarsiswa.html">📋 Daftar Siswa Kelas</a>
+      </div>
+      <div class="menu-item">
+        <a href="inputnilai.html">📝 Input & Edit Nilai</a>
+      </div>
+      <div class="menu-item">
+        <a href="jadwalguru.html">📅 Jadwal Pribadi</a>
+      </div>
+      <div class="menu-item active">
+        <a href="guru.html">📢 Pengumuman</a>
+        <span class="notif">2</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="header">
+      <h2>Halaman Guru</h2>
+      <button class="logout-button"><a href="login.html">Logout</a></button>
+    </div>
+
+    <div class="content">
+      <div class="activity-card">
+        <div>
+          <h3>Rapat Guru Besok</h3>
+          <p>12 Februari 2025</p>
+        </div>
+        <i class="fas fa-bell bell-icon"></i>
+      </div>
+
+      <div class="activity-card">
+        <div>
+          <h3>Pengumpulan Laporan</h3>
+          <p class="blue">20 Maret 2025</p>
+        </div>
+        <i class="fas fa-bell bell-icon"></i>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

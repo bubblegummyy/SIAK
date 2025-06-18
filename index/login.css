@@ -1,0 +1,112 @@
+body {
+  background-color: #121486;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-login {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Bagian Kiri */
+.form-title {
+  background-color: #000a5e;
+  color: white;
+  flex: 1;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-title h1 {
+  font-size: 30px;
+}
+
+.form-title::before {
+  content: "Hello,\A Selamat Datang\A SMK Hang Tuah 1 Jakarta";
+  white-space: pre;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+/* Bagian Kanan */
+.form-container {
+  background-color: #fff;
+  flex: 1;
+  padding: 60px 40px;
+  position: relative;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e0e0e0;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  background-color: #dcdcdc;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #c0c0c0;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.icon {
+  left: 20px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 35px;
+}
+
+.password-wrapper i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}

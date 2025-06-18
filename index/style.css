@@ -1,0 +1,96 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF; /* Biru navy khas sekolah */
+    padding: 10px 30px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-first {
+    display: flex;
+    align-items: center;
+}
+
+.nav-first img {
+    margin-right: 10px;
+}
+
+.nav-first p {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #03045E;
+    font-weight: bold;
+}
+
+.nav-second ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-second ul li a {
+    text-decoration: none;
+    color: #03045E;
+    transition: color 0.3s ease;
+}
+
+.container {
+    position: relative;
+    background-color: #03045E;
+    margin-left: 15px;
+    margin-right: 10px;
+    height: 100vh;
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.header {
+    z-index: 5;
+    position: absolute;
+    right: 35%;
+    top: 10%;
+}
+
+.header h1 {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 400px;
+
+}
+
+.header p {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+.image .overlay {
+    position: absolute;
+    width: 94vw;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.image img {
+    position: absolute;
+    width: 94vw;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 50px;
+}
+
+/* LOGIN */
+

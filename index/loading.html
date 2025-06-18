@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loading.css">
+</head>
+
+<body>
+
+    <div class="loading-area">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <script>
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const role = urlParams.get("role");
+
+    setTimeout(() => {
+      if (role === "admin") {
+        window.location.href = "admin.html";
+      } else if (role === "guru") {
+        window.location.href = "guru.html";
+      } else if (role === "siswa") {
+        window.location.href = "siswa.html";
+      } else {
+        alert("Role tidak dikenali!");
+        window.location.href = "login.html";
+      }
+    }, 3000);
+  </script>
+</body>
+
+</html>
